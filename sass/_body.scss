@@ -1,0 +1,510 @@
+.blog {
+    border-top: 1px solid rgba(61, 61, 61, 0.1);
+    padding-bottom: 6rem;
+
+
+
+    &__title-area {
+        display: flex;
+        justify-content: start;
+        padding: 4rem 8rem;
+        align-items: center;
+
+    }
+
+    .author {
+        font-size: 3.5rem;
+        font-weight: 100;
+        margin-right: auto;
+        color: #bbb;
+    }
+
+
+}
+
+.blog__btn {
+    border: 2px solid var(--primary-dark);
+    box-sizing: inherit;
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--primary-dark);
+    padding: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: var(--font-fam);
+    font-size: 1.6rem;  
+    //box-shadow: 0 1rem 2rem rgba(0,0,0,.05);
+}
+
+.blog__posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding: 0 8rem;
+    grid-column-gap: 6rem;
+}
+
+.posts {
+    overflow: hidden;
+    border-radius: 3px;
+
+    
+}
+
+.blog__img {
+    width: 100%;
+}
+
+.sub {
+
+    padding: 2rem 3rem;
+    background: #eee url(../img/zz.png) bottom right no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+.date {
+    font-size: 150%;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.post__title {
+    font-size: 220%;
+    font-weight: 300;
+    line-height: 1.4;
+    color: var(--primary);
+
+}
+.post__excerpt {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+.read__more {
+    color: var(--primary);
+    font-size: 1.7rem;
+    //border-bottom: 1px solid #ddd; 
+    text-decoration: underline;
+    text-decoration-color: #ddd;   
+}
+
+////////////////////////
+//Discover
+///////////////////////
+
+.discover {
+    padding: 4rem 8rem;
+    text-align: center;
+
+
+    .heading1sec {
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 1;
+        text-transform: capitalize;
+        margin-bottom: 1.5rem;
+        color: #000;
+    }
+
+    .discover__p {
+        font-size: 2.2rem;
+        color: rgba(70, 70, 70, 0.658);
+    }
+
+    .smallp {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        display: block; }
+
+    
+}
+.block__img {
+    width: 100%;
+    display: block;
+}
+
+.infozip {
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 8rem;
+}
+.info__block,
+.info__block2,
+.info__block3 {
+    background-color: #186b9c;
+    overflow: hidden;
+}
+
+.info__block {
+    border-radius: 1rem 0 1em 0;
+}
+.info__block2 {
+    border-radius: 0 1rem 0 1em;
+}
+.info__block3 {
+    border-radius:  1rem 0 1em 0;
+}
+
+.text__zone {
+    display: block;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.div2 {
+    position: relative;
+}
+.header__sec-absolute {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 30%;
+}
+
+
+.head2 {
+    display: block;
+    font-size: 1.9rem;
+    color: #fff;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &:before,
+    &:after {
+        content: "";
+        display: inline-block;
+        height: 2px;
+        width: 1.5rem;
+        background-color: var(--primary);
+    }
+
+
+    &:before {
+        margin-right: 1rem;
+    }
+
+    &:after {
+        margin-left: 1rem;
+    }
+}
+
+
+.headings__discover {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 9rem;
+
+}
+
+
+.h4area {
+    font-size: 300%;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--primary);
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+
+.p4area {
+    font-size: 1.6rem;
+}
+
+/////////////////////////////
+//way out
+////////////////////////////@at-root
+.school__way {
+    background: #eee url(../img/zz.png) bottom right no-repeat;
+    display: grid;
+    grid-template-columns: 40rem 1fr;
+    padding: 8rem;
+
+
+
+    span {
+        font-style: italic;
+    }
+}
+.principal__area {
+    text-align: center;
+    
+}
+
+.third__img {
+    width: 80%;
+    border-radius: 50%;
+    
+}
+
+/////////////////
+
+.pheading1 {
+    font-size: 4.5rem;
+    color: #2c84c6;
+}
+
+.pheading2 {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pheading3 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+.p__area2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 8rem;
+    margin-bottom: 2rem;
+
+}
+
+.parea1,
+.parea2 {
+    font-size: 1.8rem;
+    align-self: start;
+}
+
+.pfoot1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+}
+.pfoot2 {
+    font-size: 1.8rem;
+}
+
+
+
+@media (max-width: 1500px) {
+
+    .blog__posts {
+    padding: 0px 4rem;
+    grid-column-gap: 3rem;}
+}
+
+@media (max-width: 1300px) {
+
+    .blog__posts {
+    padding: 0px;
+    grid-column-gap: 2rem;}
+}
+
+@media (max-width: 1230px) {
+    
+    .blog__posts {
+        display: block;
+        margin: 0 auto;
+        padding: 4rem;
+
+
+        &,
+        &:before,
+        &:after {
+            
+            display: table;
+            content: ""; 
+        }
+
+        &:after {
+            clear: both;
+        }
+
+    }
+    
+    .posts {
+       width: 40%;
+       float: left;
+       margin-right: 2rem;
+       margin-bottom: 2rem;
+       
+    }
+}
+
+@media (max-width: 1140px) {
+    .p__area2 {
+        display: block;
+    }
+
+    .pheading1 {
+        line-height: 1.2;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .pheading2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1070px) {
+    .posts {
+        width: 45%;
+        float: left;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+        
+     }
+
+     .parea1 {
+        margin-bottom: 2rem;
+    }
+
+    .header__sec-absolute {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .posts {
+        width: 50%;
+        float:  none;
+        margin: 2rem auto; }
+
+
+    .infozip {
+        padding: 4rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4rem;
+    }
+
+    .discover {
+        padding: 2rem;
+    }
+
+    .school__way {
+        grid-template-columns: 30rem 1fr;
+        padding: 2rem;
+    }
+
+    .headings__discover {
+        grid-column-gap: 3rem;
+    }
+
+    .blog__title-area {
+
+        padding: 2rem;
+    }
+    
+}
+
+@media (max-width: 750px) {
+    .headings__discover {
+        grid-template-columns: 1fr;
+        text-align: center;
+
+    }
+
+    
+    .p4area {
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    .school__way {
+        display: block;
+        text-align: center;
+        padding: 4rem 2rem;
+    }
+
+    .third__img {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .header__items {
+        display: none;
+    }
+
+    .posts {
+        width: 60%;
+    }
+}
+@media (max-width: 600px) {
+    .posts {
+        width: 80%;
+    }
+
+    .head2 {
+        padding: 1.5rem 1rem;
+    }
+}
+@media (max-width: 530px) {
+    .perfect {
+        font-size: 3rem;
+    }
+
+    .ox {
+        font-size: 1.5rem;    }
+
+    .btn-foot {
+        margin-right: 2rem;
+        color: #fff;
+        padding: 1rem 2rem;
+        font-size: 1.3rem;
+    }
+
+    .infozip {
+        padding: 4rem 0;
+        grid-template-columns: 1fr;
+        grid-row-gap: 4rem;
+    }
+    
+    .blog .author {
+    font-size: 2.5rem;
+    font-weight: 400;
+    }
+
+    .blog__btn {
+        padding: 1rem;
+        font-family: var(--font-fam);
+        font-size: 1.5rem; }
+
+    .parea1, .parea2 {
+        font-size: 1.5rem;
+    }
+    .footer__copy {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    
+
+}
+
+@media (max-width: 480px) {
+
+    .infozip {
+        & > * {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    .perfect {
+        font-size: 2.5rem;
+    }
+
+    .btn-foot {
+        margin-bottom: 1rem;
+    }
+
+    .posts {
+        width: 100%;
+    }
+}

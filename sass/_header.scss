@@ -1,0 +1,280 @@
+.header {
+    background-color: var(--primary);
+    padding: 2rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &__logo {
+        height: 6rem;
+        margin-right: auto;
+    }
+
+
+    &__items {
+        display: flex;
+        align-items: center;
+
+
+        & > *:not(:last-child){
+            margin-right: 4rem;
+        }
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn--1 {
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background-color: var(--primary-dark);
+        color: #fff;
+        padding: 1.8rem;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-family: var(--font-fam);
+        font-size: 1.6rem;   
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.05);
+    }
+    &__btn--1:hover {
+        background-color: #114d70;
+        border-color: #114d70;
+        color: #fff;   
+    }
+
+    &__btn--2 {
+        border: 2px solid #fff;
+        box-sizing: inherit;
+        border-radius: 4px;
+        background-color: transparent;
+        color: #fff;
+        padding: 1.8rem;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-family: var(--font-fam);
+        font-size: 1.6rem;  
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.05);
+    }
+    &__btn--2:hover {
+        background-color: var(--yellow);
+        border-color: var(--yellow);
+        color: #000;
+    }
+
+    
+
+    .tele {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: var(--font-fam);
+        font-size: 1.6rem
+    }
+
+    &__svg {
+        height: 2rem;
+        width: 2rem;
+        fill: #fff;
+
+        //either methods will work, either the absolute positioning or flexbox
+        /*position: absolute;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);*/
+    }
+
+    .svg {
+        background-color: var(--primary-dark);
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+
+        //position: relative;
+    }
+}
+
+////////////////////////////
+// Navigation Area
+////////////////////////////
+
+.navi {
+    background-color: #fff;
+    padding: 0 12rem;  
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    
+}
+.navi__link {
+    color: var(--primary);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-family: var(--font-fam);
+    font-size: 1.6rem;  
+    padding: 1.5rem 2.5rem;
+
+
+    
+        &:hover {
+            background-color: var(--primary);
+            color: #fff;
+        }
+}
+
+.navi__link-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navi__link-style:after {
+    content:"";
+    height: 1.6rem;
+    width: 1.6rem;
+    display: inline-block;
+    
+    background-color: var(--yellow);
+    -webkit-mask-image: url(/img/chevron-down.svg);
+    mask-image: url(/img/chevron-down.svg);
+    -webkit-mask-size: cover;
+            mask-size: cover;
+            margin-left: .5rem;
+
+}
+
+//////////////////////
+///Info Sec
+////////////////////
+
+
+.intro__area {
+    background-image: linear-gradient(to bottom, rgba( #2c84c6, .7), rgba( #2c84c6, .7) ), url(../img/Smiles.jpg);
+    padding: 8rem;
+    background-size: cover;
+    background-position: center;
+
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ox {
+    font-size: 2rem;
+    color: rgb(211, 213, 231);
+}
+
+.perfect {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.ecb {
+    font-size: 1.5rem;
+    color: #fff;
+   margin-bottom: 2rem; 
+}
+
+.btn-foot {
+    margin-right: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: #f9b416;
+    color: #fff;
+    padding: 1.5rem 3rem;
+    font-weight: 400;
+    font-family: var(--font-fam);
+    font-size: 1.6rem;
+}
+
+@media (max-width: 1500px) {
+    .navi {padding: 0 8rem; }
+        
+}
+
+@media (max-width: 1300px) {
+
+    .navi {padding: 0 4rem; }
+}
+
+@media (max-width: 1300px) {
+
+    .navi {padding: 0 4rem; }
+}
+
+@media (max-width: 1230px) {
+    .navi {padding: 0; }
+}
+
+@media (max-width: 1140px) {
+    .navi {
+        flex-wrap: wrap;
+    }
+    .header {
+        background-color: var(--primary);
+        padding: 2rem 4rem; }
+
+}
+
+@media (max-width: 750px) {
+
+    .header {
+        background-color: var(--primary);
+        padding: 2rem; }
+
+
+    .nav__menu {
+        content: "";
+        display: block;
+        width: 5rem;
+        height: 2px;
+        background-color: #fff;
+    
+        &::before,
+        &::after {
+            content: "";
+        display: block;
+        width: 5rem;
+        height: 2px;
+        background-color: #fff;
+        }
+
+        &::before {
+            transform: translateY(-1.5rem);
+        }
+        &::after {
+            transform: translateY(1.5rem);
+        }
+    }
+}
+
+@media (min-width: 760px) {
+    .nav__menu {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+  
+
+}
+
+@media (max-width: 400px) {
+    .header__logo {
+        height: 5rem;
+    }
+}
